@@ -1,0 +1,13 @@
+﻿@model BookManager.Models.Book
+@{
+    ViewBag.Title = "Buy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<p style="font-size:24px">Bạn đã mua sách <strong>@Model.Title</strong> Với giá <strong>@Model.Price</strong>VNĐ</p>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
